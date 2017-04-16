@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Workspace</title>
+  <title><%= set_title(yield(:title)) %>
+  </title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+<header class="navbar navbar-fixed-top navbar-right navbar-inverse">
+  <!-- NavBar Contents -->
+<nav >
+<div class="container">
+    <ul class="nav navbar-nav navbar-fixed-top navbar-right">
+        <li> <%= link_to "About Us", root_url.chomp("/") + "#aboutUs" %> </li>
+        <li> <%= link_to "Get in touch", root_url.chomp("/") + "#getInTouch" %> </li>
+        <li> <%= link_to "Our Services", root_url.chomp("/") + "#services" %> </li>
+    </ul>
+</div>
+</nav>
+</header>
 <%= yield %>
 
 </body>

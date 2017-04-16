@@ -1,18 +1,6 @@
-<h1>Welcome#hello</h1>
-<p>Find me in app/views/welcome/hello.html.erb</p>
-
-
-<!-- NavBar Contents -->
-<nav class="navbar navbar-inverse">
-<div class="container-fluid">
-    <ul>
-        <li> <%= link_to "About Us", root_url.chomp("/") + "#aboutUs" %> </li>
-        <li> <%= link_to "Get in touch", root_url.chomp("/") + "#getInTouch" %> </li>
-        <li> <%= link_to "Our Services", root_url.chomp("/") + "#services" %> </li>
-    </ul>
-</div>
-</nav>
-
+<% provide :title, "Welcome" %>
+<div class="center jumbotron">
+    
 <!-- Welcome Page Hellow view Content -->
 <center><h1>Welcome to the EAP</h1>
 <h2> We are people who are the EAP </h2><br/>
@@ -22,6 +10,7 @@ EAP’s are free and confidential referral and consultation services which are o
 an employer’s human resources department.<br/><br/>
 
 <h5>Disclaimer: Each EAP (the good ones) also has a website that provides you with information about wellness (like us)</h5></center>
+</div>
 <!---------------------------------------------------------------------------------------------------------------------------------------------------------->
 <!---------------------------------------------------------------------------------------------------------------------------------------------------------->
 <!-- EO Hello View -->
