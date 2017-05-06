@@ -1,8 +1,32 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-body{
-    padding: 20px;
+body {
+  padding: 2px;
+background-color: #91ad75;
+font-family: proxima-nova, 'Helvetica Neue', Arial, Helvetica,
+sans-serif;
+}
+.navbar-brand {
+a {
+color: #125688;
+}
+}
+
+.jumbotron
+{
+  background-color: #3d3d3d;
+  color: #ffffff;
+}
+
+.navbar-default 
+{
+background-color: #233156;
+height: 54px;
+.navbar-nav li a 
+{
+color: #ffffff;
+}
 }
 
 section {

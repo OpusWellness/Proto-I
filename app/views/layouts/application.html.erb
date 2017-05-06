@@ -11,14 +11,15 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<header class="navbar navbar-fixed-top navbar-right navbar-inverse">
-  <!-- NavBar Contents -->
-<nav >
 <div class="container">
-    <ul class="nav navbar-nav navbar-fixed-top navbar-right">
-        <li> <%= link_to "About Us", root_url.chomp("/") + "#aboutUs" %> </li>
-        <li> <%= link_to "Get in touch", root_url.chomp("/") + "#getInTouch" %> </li>
-        <li> <%= link_to "Our Services", root_url.chomp("/") + "#services" %> </li>
+<header class="header clearfix">
+  <!-- NavBar Contents -->
+<nav>
+
+    <ul class="nav navbar-inverse nav-pills float-right">
+        <li class="nav-item"> <%= link_to "About Us", root_url.chomp("/") + "#aboutUs", class: "nav-link"%> </li>
+        <li class="nav-item"> <%= link_to "Get in touch", root_url.chomp("/") + "#getInTouch", class: "nav-link" %> </li>
+        <li class="nav-item"> <%= link_to "Our Services", root_url.chomp("/") + "#services", class: "nav-link" %> </li>
     </ul>
 </div>
 </nav>
